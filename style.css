@@ -1,0 +1,497 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    background: #ffffff;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.88;
+}
+
+/* Navigation Bar */
+.navbar {
+    height: 76px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 25px;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #1a73e8;
+}
+
+.sign-in {
+    padding: 11px 22px;
+    color: #1a73e8;
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 85px 30px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    max-width: 580px;
+    margin-bottom: 24px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.description {
+    max-width: 480px;
+    color: #5f6368;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Meeting Buttons */
+.meeting-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.new-meeting {
+    padding: 15px 20px;
+    color: #ffffff;
+    background: #1a73e8;
+    border: none;
+    border-radius: 5px;
+}
+
+.new-meeting:hover {
+    background: #1765cc;
+}
+
+.join-box {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+}
+
+.join-box input {
+    width: 190px;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.join-box input:focus {
+    box-shadow: inset 0 0 0 1px #1a73e8;
+}
+
+.join-box button {
+    padding: 0 15px;
+    color: #1a73e8;
+    background: #ffffff;
+    border: none;
+}
+
+.hero-content hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid #eeeeee;
+}
+
+.info {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+/* Meeting Preview */
+.preview-screen {
+    min-height: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f8fafd;
+    border: 1px solid #dadce0;
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #174ea6;
+    background: #d2e3fc;
+    border-radius: 50%;
+    font-size: 45px;
+}
+
+.preview-screen h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.preview-screen p {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.controls button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #e8eaed;
+    font-size: 20px;
+}
+
+.controls button.off {
+    background: #fce8e6;
+}
+
+/* Features */
+.features {
+    padding: 55px 25px 70px;
+    text-align: center;
+    background: #f8fafd;
+}
+
+.features > h2,
+.about h2 {
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.feature-list {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.feature-card p {
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #5f6368;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #5f6368;
+    border-top: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 50px 22px;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .meeting-actions {
+        flex-direction: column;
+    }
+
+    .new-meeting {
+        min-height: 48px;
+    }
+
+    .join-box {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    .join-box input {
+        flex: 1;
+        width: 0;
+        min-width: 0;
+    }
+
+    .preview-screen {
+        min-height: 280px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo {
+        font-size: 21px;
+    }
+
+    .sign-in {
+        padding: 9px 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .preview-screen {
+        padding: 20px 12px;
+    }
+}
+/* Google Meet logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+/* Navigation actions */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #dadce0;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 19px;
+}
+
+/* Smooth theme transition */
+body,
+header,
+.preview-screen,
+.features,
+.feature-card,
+.about,
+footer,
+.join-box,
+.join-box button,
+.sign-in {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #202124;
+    color: #e8eaed;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+    background: #202124;
+    border-color: #3c4043;
+}
+
+body.dark-mode .logo,
+body.dark-mode nav a,
+body.dark-mode .description,
+body.dark-mode .info,
+body.dark-mode .preview-screen p,
+body.dark-mode .feature-card p,
+body.dark-mode .about p {
+    color: #bdc1c6;
+}
+
+body.dark-mode nav a:hover {
+    color: #8ab4f8;
+}
+
+body.dark-mode .theme-toggle,
+body.dark-mode .sign-in {
+    color: #8ab4f8;
+    border-color: #5f6368;
+    background: #292a2d;
+}
+
+body.dark-mode .join-box {
+    background: #292a2d;
+    border-color: #5f6368;
+}
+
+body.dark-mode .join-box input {
+    color: #e8eaed;
+    background: #292a2d;
+}
+
+body.dark-mode .join-box input::placeholder {
+    color: #9aa0a6;
+}
+
+body.dark-mode .join-box button {
+    color: #8ab4f8;
+    background: #292a2d;
+}
+
+body.dark-mode .hero-content hr {
+    border-color: #3c4043;
+}
+
+body.dark-mode .preview-screen {
+    background: #292a2d;
+    border-color: #3c4043;
+}
+
+body.dark-mode .avatar {
+    background: #394457;
+    color: #d2e3fc;
+}
+
+body.dark-mode .controls button {
+    background: #3c4043;
+}
+
+body.dark-mode .controls button.off {
+    background: #5f3333;
+}
+
+body.dark-mode .features {
+    background: #171717;
+}
+
+body.dark-mode .feature-card {
+    background: #292a2d;
+    border-color: #3c4043;
+}
+
+body.dark-mode .about {
+    background: #202124;
+}
+
+body.dark-mode .sign-in:hover,
+body.dark-mode .theme-toggle:hover {
+    background: #3c4043;
+}
+
+/* Mobile navigation */
+@media (max-width: 800px) {
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .logo-img {
+        width: 32px;
+        height: 32px;
+    }
+}

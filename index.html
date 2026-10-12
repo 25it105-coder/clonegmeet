@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meet - Video Meetings</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION BAR ================= -->
+    <header class="navbar">
+
+        <!-- Google Meet Logo -->
+        <a href="#home" class="logo">
+            <img
+                src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-96dp/logo_meet_2020q4_color_1x_web_96dp.png"
+                alt="Google Meet logo"
+                class="logo-img"
+            >
+            <span>Meet</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <!-- Theme and Sign-in Buttons -->
+        <div class="nav-actions">
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Toggle dark mode"
+            >
+                🌙
+            </button>
+
+            <button
+                id="signInBtn"
+                class="sign-in"
+                type="button"
+            >
+                Sign in
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <!-- Left Content -->
+            <div class="hero-content">
+
+                <h1>
+                    Video calls and meetings
+                    for everyone
+                </h1>
+
+                <p class="description">
+                    Connect, collaborate, and celebrate from anywhere
+                    with your own meeting space.
+                </p>
+
+
+                <!-- Meeting Actions -->
+                <div class="meeting-actions">
+
+                    <button
+                        id="newMeetingBtn"
+                        class="new-meeting"
+                        type="button"
+                    >
+                        + New meeting
+                    </button>
+
+
+                    <!-- Join Meeting -->
+                    <div class="join-box">
+
+                        <input
+                            type="text"
+                            id="meetingCode"
+                            placeholder="Enter a code or link"
+                            aria-label="Enter a meeting code or link"
+                            autocomplete="off"
+                        >
+
+                        <button
+                            id="joinMeetingBtn"
+                            type="button"
+                        >
+                            Join
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+                <p class="info">
+                    Secure video meetings for everyone.
+                </p>
+
+            </div>
+
+
+            <!-- ================= MEETING PREVIEW ================= -->
+            <div class="preview">
+
+                <div class="preview-screen">
+
+                    <!-- User Avatar -->
+                    <div class="avatar">
+                        Y
+                    </div>
+
+                    <h2>Your meeting preview</h2>
+
+                    <p>
+                        Ready to connect with your team?
+                    </p>
+
+
+                    <!-- Meeting Controls -->
+                    <div class="controls">
+
+                        <button
+                            id="micBtn"
+                            type="button"
+                            title="Toggle microphone"
+                            aria-label="Toggle microphone"
+                        >
+                            🎙️
+                        </button>
+
+                        <button
+                            id="cameraBtn"
+                            type="button"
+                            title="Toggle camera"
+                            aria-label="Toggle camera"
+                        >
+                            📹
+                        </button>
+
+                        <button
+                            id="settingsBtn"
+                            type="button"
+                            title="Settings"
+                            aria-label="Settings"
+                        >
+                            ⚙️
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES SECTION ================= -->
+        <section class="features" id="features">
+
+            <h2>Meet from anywhere</h2>
+
+            <div class="feature-list">
+
+                <!-- Feature 1 -->
+                <article class="feature-card">
+
+                    <h3>🎥 Video Meetings</h3>
+
+                    <p>
+                        Connect face-to-face with your team
+                        from anywhere.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 2 -->
+                <article class="feature-card">
+
+                    <h3>💬 Simple Collaboration</h3>
+
+                    <p>
+                        Make conversations easier and faster
+                        with your team.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 3 -->
+                <article class="feature-card">
+
+                    <h3>🔗 Easy to Join</h3>
+
+                    <p>
+                        Join a meeting using a meeting code
+                        or a shared link.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section class="about" id="about">
+
+            <h2>About Meet</h2>
+
+            <p>
+                A simple video meeting website concept
+                built with HTML, CSS, and JavaScript.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            Meet Clone | Built with HTML, CSS and JavaScript
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
